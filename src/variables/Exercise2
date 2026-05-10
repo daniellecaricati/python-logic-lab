@@ -1,0 +1,9 @@
+#Create an algorithm that asks for price and percentage of discount of a product. Calculate and print the total. 
+price = float(input("Type the price of the product: "))
+p = float(input("Type the percentage of discount (0-100%):"))
+discount = price * (p / 100)
+final = price - discount
+print("The price of the product is %.2f. The discount is %.0f%%" % (price, p)) #Classic = %(variable)
+print("The calculated amount of the discount: %.2f. Final price of the product is: %.2f" % (discount, final))
+print("The price of product is {}. The discount is {}%.".format(price,p)) #Modern = .format(variable)
+print("The calculated amount of the discount: {}. Final price of the product is {}".format(discount,final))
