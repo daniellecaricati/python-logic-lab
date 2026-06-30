@@ -1,0 +1,19 @@
+cadastro = {'nome':[], 'sexo':[], 'ano':[]} #dicionario com listas vazias
+
+while True:
+    terminar = input('Deseja cadastrar uma pessoa? (S/N)')
+    if terminar.upper() in 'N':
+        break
+    if terminar.upper() not in 'S':
+        print('Digite S para sim ou N para não.')
+    continue
+
+nome = input('Qual o nome? ')
+sexo = input('Qual o sexo? ')
+ano = input('Qual o ano de nascimento? ')
+
+cadastro['nome'].append(nome)
+cadastro['sexo'].append(sexo.upper())
+cadastro['ano'].append(ano)
+
+print(cadastro)
